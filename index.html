@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-COMMERCE CART SYSTEM</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- nav -->
+      <div class="nav container">
+        <img src="./img/T.png" alt="logo" class="logo-nav">
+        <a href="#" class="logo"> Tejas Manga Store</a>
+        <div class="InputContainer">
+          <input
+            type="text"
+            name="text"
+            class="input"
+            id="input"
+            placeholder="Search"
+          />
+
+          <label for="input" class="labelforsearch">
+            <svg viewBox="0 0 512 512" class="searchIcon">
+              <path
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+              ></path>
+            </svg>
+          </label>
+          <div class="border"></div>
+        </div>
+       
+        <!-- can have these icons on nav bar -->
+        <!-- <i class="bx bxs-home" id="icon"></i>
+        <i class="bx bxs-contact" id="icon"></i>
+        <i class="bx bxs-shopping-bags" id="icon"></i>
+        <i class="bx bx-menu" id="icon"></i> -->
+
+        <!-- cart-icon -->
+        <i class='bx bx-cart-alt' id="cart-icon"></i>
+        <!-- cart -->
+        <div class="cart">
+          <h2 class="card-title">Your cart</h2>
+          <!-- Content -->
+          <div class="cart-content"></div>
+          <!-- Total Bill -->
+          <div class="total">
+            <div class="total-title">Total:</div>
+            <div class="total-price">Rs.0</div>
+          </div>
+          <!-- Discount Button -->
+          <button type="button" class="btn-discount">Click to get Discount!</button>
+          <div class="new-total">
+            <div class="new-total-title">New Total</div>
+            <div class="new-total-price">Rs.0</div>
+          </div>
+          <div class="saved">
+            <div class="saved-title">You saved</div>
+            <div class="amount-saved">Rs.0</div>
+          </div>
+
+          <!-- Buy Items -->
+          <button type="button" class="btn-buy">Buy Now</button>
+          <!-- Close Cart -->
+          <i class="bx bx-x" id="close-cart"></i>
+        </div>
+      </div>
+    </header>
+    <!-- shop -->
+    <section class="shop container">
+      <h2 class="section-title">Shop Manga Books <br> <span class="h2-span">*Check for special Discounts*</span></h2>
+      <!-- content -->
+      <div class="shop-content">
+        <!-- box 1 -->
+        <div class="product-box">
+          <img src="./img/naruto1.jpg" alt="NARUTO" class="product-img" />
+          <h2 class="product-title">NARUTO MANGA</h2>
+          <span class="price"> Rs.199</span>
+          <i class="bx bxs-shopping-bag-alt add-cart"></i>
+        </div>
+        <!-- box 2 -->
+        <div class="product-box">
+          <img
+            src="./img/onepiece1.jpg"
+            alt=" ONEPIENCE"
+            class="product-img"
+          />
+          <h2 class="product-title">ONE PIECE MANGA</h2>
+          <span class="price">Rs.249</span>
+          <i class="bx bxs-shopping-bag-alt add-cart"></i>
+        </div>
+        <!-- box 3 -->
+        <div class="product-box">
+          <img src="./img/db1.jpg" alt="DB" class="product-img" />
+          <h2 class="product-title">DRAGON BALL MANGA</h2>
+          <span class="price">Rs.238</span>
+          <i class="bx bxs-shopping-bag-alt add-cart"></i>
+        </div>
+        <!-- box 4 -->
+        <div class="product-box">
+          <img src="./img/bleach1.jpg" alt="BLEACH" class="product-img" />
+          <h2 class="product-title">BLEACH MANGA</h2>
+          <span class="price">Rs.321</span>
+          <i class="bx bxs-shopping-bag-alt add-cart"></i>
+        </div>
+        <!-- box 5 -->
+        <div class="product-box">
+          <img src="./img/deathote2.jpg" alt="DEATH NOTE" class="product-img" />
+          <h2 class="product-title">DEATH NOTE MANGA</h2>
+          <span class="price">Rs.500</span>
+          <i class="bx bxs-shopping-bag-alt add-cart"></i>
+        </div>
+        <!-- box 6 -->
+        <div class="product-box">
+          <img src="./img/demon1.webp" alt="DEMON SLAYER MANGA" class="product-img" />
+          <h2 class="product-title">DEMON SLAYER MANGA</h2>
+          <span class="price">Rs.259</span>
+          <i class="bx bxs-shopping-bag-alt add-cart"></i>
+        </div>
+        <!-- box 7 -->
+        <div class="product-box">
+          <img src="./img/aot1.jpg" alt="ATTACK ON TITANS MANGA" class="product-img" />
+          <h2 class="product-title">ATTACK ON TITANS MANGA</h2>
+          <span class="price">Rs.599</span>
+          <i class="bx bxs-shopping-bag-alt add-cart"></i>
+        </div>
+        <!-- box 8 -->
+        <div class="product-box">
+          <img src="./img/blackclaver1.jpg" alt="BLACK CLAVER MANGA" class="product-img" />
+          <h2 class="product-title">BLACK CLAVER MANGA</h2>
+          <span class="price">Rs.299</span>
+          <i class="bx bxs-shopping-bag-alt add-cart"></i>
+        </div>
+        <!-- box 9 -->
+        <div class="product-box">
+          <img src="./img/haikyuu1.jpg" alt="HAIKYUU MANGA" class="product-img" />
+          <h2 class="product-title">HAIKYUU MANGA</h2>
+          <span class="price">Rs.199</span>
+          <i class="bx bxs-shopping-bag-alt add-cart"></i>
+        </div>
+        <!-- box 10  -->
+        <div class="product-box">
+          <img src="./img/myheroacadema1.jpg" alt="MY HERO ACADEMA" class="product-img" />
+          <h2 class="product-title">MY HERO ACADEMA</h2>
+          <span class="price">Rs.349</span>
+          <i class="bx bxs-shopping-bag-alt add-cart"></i>
+        </div>
+      </div>
+    </section>
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
